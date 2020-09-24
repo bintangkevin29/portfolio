@@ -1,5 +1,11 @@
 @import "./styles/font.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "./styles/variables.scss";
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
