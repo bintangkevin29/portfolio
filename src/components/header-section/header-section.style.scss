@@ -37,6 +37,16 @@
   &__highlight {
     @extend .text-primary;
   }
+  &__scroll-icon {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 40px;
+    color: $colPrimary;
+    animation: scrollDownAnimation 2s infinite;
+  }
 }
 
 @keyframes typingAnimation {
@@ -48,5 +58,15 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 0.8;
   }
 }
