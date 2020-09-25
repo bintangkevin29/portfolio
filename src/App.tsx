@@ -8,6 +8,7 @@ import store from "./redux/store";
 import { useSelector } from "react-redux";
 import { selectFirstVisit } from "./redux/misc/misc.selector";
 import FooterSection from "./components/footer-section";
+import MobileNav from "./components/mobile-nav";
 
 function App() {
   const firstVisit = useSelector(selectFirstVisit);
@@ -27,6 +28,7 @@ function App() {
   return (
     <Fragment>
       <CustomNavbar />
+      <MobileNav />
       <Switch>
         <Route path="/" exact component={HomePage} />
       </Switch>
