@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-export const useScroll = (id: string) => {
-  const [hit, setHit] = useState<boolean>(true);
+export const useScroll = (id: string, initState: boolean = false) => {
+  const [hit, setHit] = useState<boolean>(initState);
 
   const isInViewport = (el: Element | null) => {
     if (el) {
