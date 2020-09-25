@@ -1,9 +1,9 @@
-@import "./styles/font.scss";
 @import "~bootstrap/scss/bootstrap";
 @import "./styles/variables.scss";
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Courier Prime", monospace;
+
   background-color: $colBg !important;
 }
 
