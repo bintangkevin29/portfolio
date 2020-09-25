@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CustomSection from "../../components/custom-section";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
