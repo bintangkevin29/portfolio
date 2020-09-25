@@ -8,6 +8,7 @@ interface Props {
   containerClassName?: string;
   children: ReactNode;
   fluid?: boolean;
+  id?: string;
 }
 
 const CustomSection: React.FC<Props> = ({
@@ -15,9 +16,10 @@ const CustomSection: React.FC<Props> = ({
   containerClassName,
   children,
   fluid = false,
+  id,
 }) => {
   return (
-    <section className={`custom-section ${className}`}>
+    <section id={id} className={`custom-section ${className}`}>
       <Container fluid={fluid} className={`custom-section__container ${containerClassName}`}>
         {children}
       </Container>

@@ -7,6 +7,7 @@ import "./header-section.style.scss";
 const HeaderSection: React.FC = () => {
   return (
     <CustomSection
+      id="header-section"
       className="header-section"
       containerClassName="header-section header-section__container"
     >
