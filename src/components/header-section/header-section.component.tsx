@@ -12,7 +12,7 @@ const HeaderSection: React.FC = () => {
     >
       <h4 className="header-section__intro header-section__intro--fade">Hello there</h4>
       <h1 className="header-section__intro header-section__intro--type-animation">
-        I'm <span className="header-section header-section__highlight">Kevin</span> Samosir
+        I'm <span className="header-section__highlight">Kevin</span> Samosir
       </h1>
       <FaAngleDoubleDown className="header-section__scroll-icon" />
     </CustomSection>
