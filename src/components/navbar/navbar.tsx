@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgBitbucket } from "react-icons/cg";
-import { RiLinkedinLine, RiInstagramLine, RiGithubLine, RiDribbbleLine } from "react-icons/ri";
+import { RiLinkedinLine, RiInstagramLine, RiGithubLine, RiDribbbleLine, RiMailLine } from "react-icons/ri";
 import { useScroll } from "../../lib/custom-hook";
 import SocialMediaIcon from "../social-media-icon/social-media-icon.component";
 import "./navbar.scss";
@@ -35,6 +35,9 @@ const CustomNavbar: React.FC = () => {
             </SocialMediaIcon>
             <SocialMediaIcon href="https://instagram.com/kevinsamosir29">
               <RiInstagramLine />
+            </SocialMediaIcon>
+            <SocialMediaIcon href="mailto:bintangkevin29@gmail.com">
+              <RiMailLine />
             </SocialMediaIcon>
           </div>
           <div className="navbar-custom__menu-items">about</div>
