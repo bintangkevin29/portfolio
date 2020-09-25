@@ -1,6 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { FaAngular, FaCss3, FaCss3Alt, FaHtml5, FaLaravel, FaNodeJs, FaPhp, FaReact, FaSass, FaUnity, FaVuejs } from "react-icons/fa";
-import { SiFirebase, SiFlutter, SiJavascript, SiTypescript, SiUnrealengine, SiWebpack } from "react-icons/si";
+import {
+  FaAngular,
+  FaCss3Alt,
+  FaHtml5,
+  FaLaravel,
+  FaNodeJs,
+  FaPhp,
+  FaReact,
+  FaSass,
+  FaUnity,
+  FaVuejs,
+} from "react-icons/fa";
+import {
+  SiFirebase,
+  SiFlutter,
+  SiJavascript,
+  SiTypescript,
+  SiUnrealengine,
+  SiWebpack,
+} from "react-icons/si";
 import { About } from "../../global";
 import { firestoreDB } from "../../lib/firebase";
 import CustomSection from "../custom-section";
