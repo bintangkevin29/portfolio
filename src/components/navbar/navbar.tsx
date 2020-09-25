@@ -27,7 +27,6 @@ const CustomNavbar: React.FC = () => (
             <RiInstagramLine />
           </SocialMediaIcon>
         </div>
-
         <div className="navbar-custom__menu-items">about</div>
       </Col>
     </Row>
