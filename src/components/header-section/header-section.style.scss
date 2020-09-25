@@ -15,24 +15,26 @@
     font-weight: 800;
     opacity: 0.8;
     position: relative;
-    &--type-animation {
-      &:before {
-        content: "";
-        position: absolute;
-        right: -15px;
-        top: 0;
-        height: 100%;
-        width: 7px;
-        background: #000;
-        opacity: 0.8;
-        animation: typingAnimation 1s infinite step-end;
-      }
-    }
     &--fade {
       font-size: 30px;
       opacity: 0.5;
       font-weight: 300;
       margin-bottom: 0;
+    }
+  }
+  &__type-animation {
+    &:after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 0;
+      height: 100%;
+      width: 7px;
+      background: #000;
+      animation: typingAnimation 1s infinite step-end;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
   }
   &__highlight {
@@ -58,7 +60,7 @@
     opacity: 0;
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.4;
   }
   100% {
     opacity: 0;

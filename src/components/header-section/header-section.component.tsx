@@ -15,8 +15,9 @@ const HeaderSection: React.FC = () => {
       containerClassName="header-section header-section__container"
     >
       <h4 className="header-section__intro header-section__intro--fade">Hello there</h4>
-      <h1 className="header-section__intro header-section__intro--type-animation">
-        I'm <span className="header-section__highlight">Kevin</span> Samosir
+      <h1 className="header-section__intro">
+        I'm <span className="header-section__highlight">Kevin</span>{" "}
+        <span className="header-section__type-animation">Samosir</span>
       </h1>
       <FaAngleDoubleDown
         className={`header-section__scroll-icon ${
