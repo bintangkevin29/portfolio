@@ -38,6 +38,7 @@
     font-size: 25px;
     padding: 0 10px;
     opacity: 0.8;
+    transition: 0.2s all ease;
     &--selected {
       position: relative;
       font-weight: 800;
