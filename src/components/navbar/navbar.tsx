@@ -15,8 +15,6 @@ import "./navbar.scss";
 
 const CustomNavbar: React.FC = () => {
   const isOnWorkSection = useScroll("#work-section");
-  console.log(isOnWorkSection);
-  
 
   return (
     <div className="navbar-custom">
