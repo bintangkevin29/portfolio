@@ -9,7 +9,7 @@
   right: 0;
   width: 200px;
   height: 100vh;
-  border-left: 1px solid rgba($color: #000, $alpha: 0.1);
+  border-left: $borderThin;
   &__inner {
     display: flex;
     justify-content: center;

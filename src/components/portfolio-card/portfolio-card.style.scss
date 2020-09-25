@@ -1,4 +1,62 @@
 @import "../../styles/variables.scss";
 
 .portfolio-card {
+  padding: 20px;
+  box-shadow: 0;
+  transition: 0.5s all ease;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: $colBg;
+  border: $borderThin;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    box-shadow: 20px 20px 40px rgba($color: #000000, $alpha: 0.05);
+  }
+  &__image-container {
+    overflow: hidden;
+  }
+  &__image {
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  &__image-loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  &__details {
+    opacity: 0.8;
+    padding: 20px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 800;
+    color: $colPrimary;
+    margin-bottom: 10px;
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__navigation-items {
+    font-size: 25px;
+    opacity: 0.5;
+    margin: 0px 10px;
+    transition: 0.2s all ease;
+    &:hover {
+      color: $colPrimary !important;
+    }
+    &:focus {
+      color: $colPrimary !important;
+    }
+  }
 }
