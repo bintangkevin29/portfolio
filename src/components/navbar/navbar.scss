@@ -1,6 +1,9 @@
 @import "../../styles/variables.scss";
 
 .navbar-custom {
+  @media (max-width: 991px) {
+    display: none;
+  }
   position: fixed;
   top: 0;
   right: 0;
@@ -36,7 +39,7 @@
     padding: 0 10px;
     &--selected {
       position: relative;
-      font-weight: 800; 
+      font-weight: 800;
       background: $colPrimary;
       color: $colBg;
     }

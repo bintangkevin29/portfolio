@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { CgBitbucket } from "react-icons/cg";
 import { RiLinkedinLine, RiInstagramLine, RiGithubLine, RiDribbbleLine } from "react-icons/ri";
 import SocialMediaIcon from "../social-media-icon/social-media-icon.component";
 import "./navbar.scss";
@@ -15,6 +16,9 @@ const CustomNavbar: React.FC = () => (
           </SocialMediaIcon>
           <SocialMediaIcon href="https://github.com/bintangkevin29">
             <RiGithubLine />
+          </SocialMediaIcon>
+          <SocialMediaIcon href="https://github.com/bintangkevin29">
+            <CgBitbucket />
           </SocialMediaIcon>
           <SocialMediaIcon href="https://dribbble.com/bkevin29">
             <RiDribbbleLine />
