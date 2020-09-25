@@ -3,37 +3,42 @@
 .navbar-custom {
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  border-left: 1px solid rgba($color: #000, $alpha: 0.1);
   &__inner {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     opacity: 0.8;
     padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0 !important;
   }
   &__menu-container {
     @media (max-width: 991px) {
       display: none;
     }
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
   &__menu-items {
     margin: 0px 30px;
     padding: 10px 0px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 10px;
     &--selected {
       position: relative;
-      font-weight: 600;
-      &:before {
-        position: absolute;
-        content: "";
-        bottom: 0px;
-        left: 0;
-        height: 4px;
-        width: 100%;
-        background-color: $colPrimary;
-      }
+      font-weight: 800; 
+      background: $colPrimary;
+      color: $colBg;
     }
   }
 }

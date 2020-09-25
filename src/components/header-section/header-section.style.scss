@@ -12,7 +12,7 @@
   }
   &__intro {
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 800;
     opacity: 0.8;
     position: relative;
     &--type-animation {
@@ -32,6 +32,7 @@
       font-size: 30px;
       opacity: 0.5;
       font-weight: 300;
+      margin-bottom: 0;
     }
   }
   &__highlight {
