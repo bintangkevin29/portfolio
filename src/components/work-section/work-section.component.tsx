@@ -1,5 +1,6 @@
 import React from "react";
 import CustomSection from "../custom-section";
+import SectionTitle from "../section-title";
 
 import "./work-section.style.scss";
 
