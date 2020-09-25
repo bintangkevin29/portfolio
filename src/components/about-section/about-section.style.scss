@@ -5,6 +5,7 @@
     font-weight: 300;
     opacity: 0.8;
     text-align: center;
+    margin-bottom: 20px;
   }
   &__skills {
     text-align: center;
@@ -14,5 +15,32 @@
     font-size: 20px;
     margin: 0 10px;
     opacity: 0.8;
+  }
+  &__timeline-table-container {
+    opacity: 0.8;
+  }
+  &__timeline-bar {
+    background-color: $colPrimary;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: small;
+  }
+  &__timeline-title {
+    font-weight: 600;
+  }
+  &__timeline-subtitle {
+    font-weight: 300;
+  }
+  td {
+    width: 14.2%;
+    text-align: center;
+    border-left: $borderThin !important;
+    border-right: $borderThin !important;
+    opacity: 0.8;
+  }
+  table{
+    border: $borderThin;
   }
 }
