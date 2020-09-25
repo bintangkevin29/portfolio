@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.social-media-icon {
+  opacity: 0.2;
+  font-size: 25px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: $colBg;
+  background: #000;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 10px 0px;
+}

@@ -14,3 +14,15 @@ body {
 * {
   box-sizing: border-box;
 }
+
+a {
+  transition: 0.2s ease all;
+  &:hover {
+    background-color: unset;
+    color: unset;
+  }
+  &:focus {
+    color: unset;
+    background-color: unset;
+  }
+}
