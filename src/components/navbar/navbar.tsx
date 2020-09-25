@@ -1,19 +1,29 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgBitbucket } from "react-icons/cg";
-import { RiLinkedinLine, RiInstagramLine, RiGithubLine, RiDribbbleLine, RiMailLine } from "react-icons/ri";
+import {
+  RiLinkedinLine,
+  RiInstagramLine,
+  RiGithubLine,
+  RiDribbbleLine,
+  RiMailLine,
+} from "react-icons/ri";
 import { useScroll } from "../../lib/custom-hook";
 import SocialMediaIcon from "../social-media-icon/social-media-icon.component";
+import { scrollToElement } from "../../lib/helpers";
 import "./navbar.scss";
 
 const CustomNavbar: React.FC = () => {
   const isOnWorkSection = useScroll("#work-section");
+  console.log(isOnWorkSection);
+  
 
   return (
     <div className="navbar-custom">
       <Row className="navbar-custom__inner">
         <Col xs={10} className="navbar-custom__menu-container">
           <div
+            onClick={() => scrollToElement("#work-section")}
             className={`navbar-custom__menu-items ${
               isOnWorkSection ? "navbar-custom__menu-items--selected" : ""
             }`}
