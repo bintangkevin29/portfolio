@@ -12,6 +12,8 @@ import {
   FaVuejs,
 } from "react-icons/fa";
 import {
+  SiAdobephotoshop,
+  SiAdobexd,
   SiFirebase,
   SiFlutter,
   SiJavascript,
@@ -65,6 +67,8 @@ const AboutSection: React.FC = () => {
         <SiFirebase className="about-section__skill-icon" />
         <SiUnrealengine className="about-section__skill-icon" />
         <FaUnity className="about-section__skill-icon" />
+        <SiAdobephotoshop className="about-section__skill-icon" />
+        <SiAdobexd className="about-section__skill-icon" />
       </div>
       <div className="about-section__about">{about?.about}</div>
     </CustomSection>
