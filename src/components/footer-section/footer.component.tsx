@@ -15,7 +15,7 @@ import "./footer.style.scss";
 
 const FooterSection: React.FC = () => {
   return (
-    <CustomSection containerClassName="footer">
+    <CustomSection id="contact-section" containerClassName="footer">
       <div className="footer__connect">Let's connect.</div>
       <div className="footer__social-media-container">
         <SocialMediaIcon href="https://www.linkedin.com/in/bintangkevin">
