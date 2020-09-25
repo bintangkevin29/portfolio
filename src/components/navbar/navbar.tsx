@@ -27,7 +27,7 @@ const CustomNavbar: React.FC = () => {
             <SocialMediaIcon href="https://github.com/bintangkevin29">
               <RiGithubLine />
             </SocialMediaIcon>
-            <SocialMediaIcon href="https://github.com/bintangkevin29">
+            <SocialMediaIcon href="https://bitbucket.org/bintangkevin29">
               <CgBitbucket />
             </SocialMediaIcon>
             <SocialMediaIcon href="https://dribbble.com/bkevin29">
