@@ -4,7 +4,11 @@
   @media (min-width: 991px) {
     display: none;
   }
-
+  opacity: 1;
+  transition: 1s all ease;
+  &--hide {
+    opacity: 0;
+  }
   &__button {
     cursor: pointer;
     color: $colPrimary;

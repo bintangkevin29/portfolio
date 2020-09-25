@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { ImCancelCircle } from "react-icons/im";
+import { useSelector } from "react-redux";
 import { scrollToElement } from "../../lib/helpers";
+import { selectFirstVisit } from "../../redux/misc/misc.selector";
 
 import "./mobile-nav.style.scss";
 
 const MobileNav: React.FC = () => {
+  const firstVisit = useSelector(selectFirstVisit);
+
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -17,7 +21,7 @@ const MobileNav: React.FC = () => {
   };
 
   return (
-    <div className="mobile-nav">
+    <div className={`mobile-nav ${firstVisit ? "mobile-nav--hide" : ""}`}>
       <HiOutlineMenuAlt4 onClick={toggleMenu} className="mobile-nav__button" />
       <div className={`mobile-nav__mobile-menu ${showMenu ? "mobile-nav__mobile-menu--show" : ""}`}>
         <div
