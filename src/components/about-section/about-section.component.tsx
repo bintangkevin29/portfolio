@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import {
   FaAngular,
@@ -53,7 +53,7 @@ const AboutSection: React.FC = () => {
       });
   }, []);
   return (
-    <CustomSection className="about-section">
+    <CustomSection id="about-section" className="about-section">
       <SectionTitle>About Me</SectionTitle>
       <div className="about-section__skills">
         <FaReact className="about-section__skill-icon" />
@@ -76,6 +76,7 @@ const AboutSection: React.FC = () => {
         <SiAdobexd className="about-section__skill-icon" />
       </div>
       <div className="about-section__about">{about?.about}</div>
+      <SectionTitle subTitle>My Journey</SectionTitle>
       <div className="about-section__timeline-table-container">
         <Table borderless>
           <tbody>

@@ -7,6 +7,7 @@ import { setToHasVisited } from "./redux/misc/misc.action";
 import store from "./redux/store";
 import { useSelector } from "react-redux";
 import { selectFirstVisit } from "./redux/misc/misc.selector";
+import FooterSection from "./components/footer-section";
 
 function App() {
   const firstVisit = useSelector(selectFirstVisit);
@@ -29,6 +30,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage} />
       </Switch>
+      <FooterSection />
     </Fragment>
   );
 }

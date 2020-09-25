@@ -18,6 +18,7 @@ import { selectFirstVisit } from "../../redux/misc/misc.selector";
 const CustomNavbar: React.FC = () => {
   const firstVisit = useSelector(selectFirstVisit);
   const isOnWorkSection = useScroll("#work-section");
+  const isOnAboutSection = useScroll("#about-section");
 
   return (
     <div className={`navbar-custom ${firstVisit ? "navbar-custom--hidden" : ""}`}>
@@ -51,7 +52,14 @@ const CustomNavbar: React.FC = () => {
               <RiMailLine />
             </SocialMediaIcon>
           </div>
-          <div className="navbar-custom__menu-items">about</div>
+          <div
+            onClick={() => scrollToElement("#about-section")}
+            className={`navbar-custom__menu-items ${
+              isOnAboutSection ? "navbar-custom__menu-items--selected" : ""
+            }`}
+          >
+            about
+          </div>
         </Col>
       </Row>
     </div>

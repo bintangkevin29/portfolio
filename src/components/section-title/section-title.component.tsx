@@ -1,9 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import "./section-title.style.scss";
 
-const SectionTitle: React.FC = ({ children }) => {
-  return <h3 className="section-title">{children}</h3>;
+interface Props {
+  children: ReactNode;
+  subTitle?: boolean;
+}
+
+const SectionTitle: React.FC<Props> = ({ children, subTitle }) => {
+  return <h3 className={`section-title ${subTitle ? "section-title--sub" : ""}`}>{children}</h3>;
 };
 
 export default SectionTitle;
