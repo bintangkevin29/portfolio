@@ -1,12 +1,16 @@
 import React from "react";
 import CustomSection from "../../components/custom-section";
 import { FiArrowDown } from "react-icons/fi";
+import { useSelector } from "react-redux";
 
 import { useScroll } from "../../lib/custom-hook";
+
+import { selectFirstVisit } from "../../redux/misc/misc.selector";
 
 import "./header-section.style.scss";
 
 const HeaderSection: React.FC = () => {
+  const firstVisit = useSelector(selectFirstVisit);
   const isOnHeader = useScroll("#header-section", true);
   return (
     <CustomSection
@@ -21,7 +25,7 @@ const HeaderSection: React.FC = () => {
       </h1>
       <FiArrowDown
         className={`header-section__scroll-icon ${
-          !isOnHeader ? "header-section__scroll-icon--hidden" : ""
+          firstVisit ? "header-section__scroll-icon--hidden" : ""
         }`}
       />
     </CustomSection>

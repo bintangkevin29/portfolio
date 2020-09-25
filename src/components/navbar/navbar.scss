@@ -1,6 +1,9 @@
 @import "../../styles/variables.scss";
 
 .navbar-custom {
+  &--hidden {
+    opacity: 0;
+  }
   @media (max-width: 991px) {
     display: none;
   }
@@ -10,6 +13,7 @@
   width: 200px;
   height: 100vh;
   border-left: $borderThin;
+  transition: 1s all ease;
   &__inner {
     display: flex;
     justify-content: center;

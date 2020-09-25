@@ -1,13 +1,18 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import CustomNavbar from "./components/navbar";
 import HomePage from "./pages/home-page";
 import "./app.scss";
-import { useSelector } from "react-redux";
-import { selectFirstVisit } from "./redux/misc/misc.selector";
+import { setToHasVisited } from "./redux/misc/misc.action";
+import store from "./redux/store";
 
 function App() {
-  const firstVisit = useSelector(selectFirstVisit);
+
+  useEffect(() => {
+    setTimeout(() => {
+      store.dispatch(setToHasVisited());
+    }, 2000);
+  }, []);
 
   return (
     <Fragment>

@@ -40,12 +40,13 @@
   &__highlight {
     @extend .text-primary;
   }
-  &__scroll-icon { 
+  &__scroll-icon {
     font-size: 40px;
     color: $colPrimary;
     animation: scrollDownAnimation 2s infinite;
     &--hidden {
-      display: none;
+      animation: none;
+      opacity: 0;
     }
   }
 }

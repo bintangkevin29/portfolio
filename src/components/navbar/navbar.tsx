@@ -12,12 +12,15 @@ import { useScroll } from "../../lib/custom-hook";
 import SocialMediaIcon from "../social-media-icon/social-media-icon.component";
 import { scrollToElement } from "../../lib/helpers";
 import "./navbar.scss";
+import { useSelector } from "react-redux";
+import { selectFirstVisit } from "../../redux/misc/misc.selector";
 
 const CustomNavbar: React.FC = () => {
+  const firstVisit = useSelector(selectFirstVisit);
   const isOnWorkSection = useScroll("#work-section");
 
   return (
-    <div className="navbar-custom">
+    <div className={`navbar-custom ${firstVisit ? "navbar-custom--hidden" : ""}`}>
       <Row className="navbar-custom__inner">
         <Col xs={10} className="navbar-custom__menu-container">
           <div
