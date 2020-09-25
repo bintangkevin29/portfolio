@@ -1,14 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
-
-import "./app.scss";
+import CustomNavbar from "./components/navbar";
 import HomePage from "./pages/home-page";
+import "./app.scss";
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" exact component={HomePage} />
-    </Switch>
+    <Fragment>
+      <CustomNavbar />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+      </Switch>
+    </Fragment>
   );
 }
 
