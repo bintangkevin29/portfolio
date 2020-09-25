@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CustomSection from "../../components/custom-section";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
@@ -7,9 +7,7 @@ import { useScroll } from "../../lib/custom-hook";
 import "./header-section.style.scss";
 
 const HeaderSection: React.FC = () => {
-  const isOnHeader = useScroll("#header-section");
-  console.log(isOnHeader);
-
+  const isOnHeader = useScroll("#header-section", true);
   return (
     <CustomSection
       id="header-section"
