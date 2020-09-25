@@ -1,6 +1,6 @@
 import React from "react";
 import CustomSection from "../../components/custom-section";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { FiArrowDown } from "react-icons/fi";
 
 import { useScroll } from "../../lib/custom-hook";
 
@@ -19,7 +19,7 @@ const HeaderSection: React.FC = () => {
         I'm <span className="header-section__highlight">Kevin</span>{" "}
         <span className="header-section__type-animation">Samosir</span>
       </h1>
-      <FaAngleDoubleDown
+      <FiArrowDown
         className={`header-section__scroll-icon ${
           !isOnHeader ? "header-section__scroll-icon--hidden" : ""
         }`}
