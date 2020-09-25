@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .portfolio-card {
-  padding: 20px;
+  padding: 40px 20px;
   box-shadow: 0;
   transition: 0.5s all ease;
   margin-bottom: 30px;
@@ -46,6 +46,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  &__description {
+    font-weight: 300;
+    margin-bottom: 10px;
   }
   &__navigation-items {
     font-size: 25px;
