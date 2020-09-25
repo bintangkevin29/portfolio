@@ -15,3 +15,11 @@ export interface Portfolio {
   url: string;
   year: number;
 }
+
+export interface About {
+  about: string;
+  email: string;
+  github: string;
+  linkedin: string;
+  name: string;
+}

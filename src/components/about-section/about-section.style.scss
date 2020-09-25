@@ -1,4 +1,17 @@
 @import "../../styles/variables.scss";
 
 .about-section {
+  &__about {
+    font-weight: 300;
+    opacity: 0.8;
+    text-align: center;
+  }
+  &__skills {
+    text-align: center;
+  }
+  &__skill-icon {
+    font-size: 20px;
+    margin: 10px 10px;
+    opacity: 0.8;
+  }
 }
