@@ -47,6 +47,9 @@
     font-size: 40px;
     color: $colPrimary;
     animation: scrollDownAnimation 2s infinite;
+    &--hidden {
+      display: none;
+    }
   }
 }
 

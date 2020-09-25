@@ -5,6 +5,7 @@ import HomePage from "./pages/home-page";
 import "./app.scss";
 
 function App() {
+
   return (
     <Fragment>
       <CustomNavbar />
