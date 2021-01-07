@@ -23,7 +23,7 @@ function App() {
     if (firstVisit === false) {
       document.querySelector("body")?.classList.remove("overflow-hidden");
     }
-  }, [firstVisit]);
+  }, [firstVisit]); 
 
   return (
     <Fragment>
