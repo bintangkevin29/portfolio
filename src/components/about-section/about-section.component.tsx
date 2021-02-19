@@ -88,29 +88,27 @@ const AboutSection: React.FC = () => {
               <td></td>
               <td colSpan={2}>
                 <TimelineBar>
-                  <div className="about-section__timeline-title">Davis Materialworks</div>
-                  <div className="about-section__timeline-subtitle">Full Stack Engineer</div>
-                </TimelineBar>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td colSpan={3}>
-                <TimelineBar>
-                  <div className="about-section__timeline-title">PT Poda Husari Digital</div>
-                  <div className="about-section__timeline-subtitle">Full Stack Engineer</div>
-                </TimelineBar>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td colSpan={5}>
-                <TimelineBar>
-                  <div className="about-section__timeline-title"> University of North Sumatra</div>
+                  <div className="about-section__timeline-title">
+                    PT IDStar Cipta Teknologi
+                  </div>
                   <div className="about-section__timeline-subtitle">
-                    Bachelor of Computer Science (3.12 GPA)
+                    Front End Developer
+                  </div>
+                </TimelineBar>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <TimelineBar>
+                  <div className="about-section__timeline-title">
+                    Davis Materialworks
+                  </div>
+                  <div className="about-section__timeline-subtitle">
+                    Full Stack Engineer
                   </div>
                 </TimelineBar>
               </td>
@@ -118,12 +116,44 @@ const AboutSection: React.FC = () => {
               <td></td>
             </tr>
             <tr>
-              <td>2014/2015</td>
-              <td>2016</td>
+              <td></td>
+              <td colSpan={3}>
+                <TimelineBar>
+                  <div className="about-section__timeline-title">
+                    PT Poda Husari Digital
+                  </div>
+                  <div className="about-section__timeline-subtitle">
+                    Full Stack Engineer
+                  </div>
+                </TimelineBar>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colSpan={4}>
+                <TimelineBar>
+                  <div className="about-section__timeline-title">
+                    {" "}
+                    University of North Sumatra
+                  </div>
+                  <div className="about-section__timeline-subtitle">
+                    Bachelor of Computer Science (3.12 GPA)
+                  </div>
+                </TimelineBar>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2014 - 2016</td>
               <td>2017</td>
               <td>2018</td>
               <td>2019</td>
               <td>2020</td>
+              <td>2021</td>
               <td>Current</td>
             </tr>
           </tbody>
